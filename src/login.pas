@@ -8,8 +8,6 @@ uses
 
 type
   TFLogin = class(TWebForm)
-    WebLabel1: TWebLabel;
-    procedure FLoginCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,9 +21,5 @@ implementation
 
 {$R *.dfm}
 
-procedure TFLogin.FLoginCreate(Sender: TObject);
-begin
-  weblabel1.Caption := 'Hola';  
-end;
 
 end. 

@@ -34999,20 +34999,7 @@ rtl.module("login",["System","SysUtils","Classes","JS","Web","WEBLib.Graphics","
   "use strict";
   var $mod = this;
   rtl.createClass($mod,"TFLogin",pas["WEBLib.Forms"].TForm,function () {
-    this.$init = function () {
-      pas["WEBLib.Forms"].TForm.$init.call(this);
-      this.WebLabel1 = null;
-    };
-    this.$final = function () {
-      this.WebLabel1 = undefined;
-      pas["WEBLib.Forms"].TForm.$final.call(this);
-    };
-    this.FLoginCreate = function (Sender) {
-      this.WebLabel1.SetCaption("Hola");
-    };
     this.LoadDFMValues = function () {
-      this.WebLabel1 = pas["WEBLib.StdCtrls"].TLabel.$create("Create$1",[this]);
-      this.WebLabel1.BeforeLoadDFMValues();
       try {
         this.SetName("FLogin");
         this.FCSSLibrary = pas["WEBLib.Forms"].TCSSLibrary.cssNone;
@@ -35027,35 +35014,14 @@ rtl.module("login",["System","SysUtils","Classes","JS","Web","WEBLib.Graphics","
         this.SetFormStyle(pas["WEBLib.Forms"].TFormStyle.fsNormal);
         this.SetHeight(480);
         this.SetLeft(0);
-        this.SetEvent$1(this,"OnCreate","FLoginCreate");
         this.SetTabOrder(0);
         this.SetTop(0);
         this.SetWidth(640);
-        this.WebLabel1.SetParentComponent(this);
-        this.WebLabel1.SetName("WebLabel1");
-        this.WebLabel1.SetCaption("WebLabel1");
-        this.WebLabel1.SetChildOrderEx(0);
-        this.WebLabel1.FFont.FCharset = 0;
-        this.WebLabel1.FFont.SetColor(0);
-        this.WebLabel1.FFont.SetHeight(0);
-        this.WebLabel1.FFont.SetName("Arial");
-        this.WebLabel1.FFont.SetSize(8);
-        this.WebLabel1.FFont.SetStyle({});
-        this.WebLabel1.SetHeight(12);
-        this.WebLabel1.SetLeft(65);
-        this.WebLabel1.SetParentFont(false);
-        this.WebLabel1.FTextDirection = pas["WEBLib.Controls"].TTextDirection.tdDefault;
-        this.WebLabel1.SetTop(42);
-        this.WebLabel1.SetWidth(54);
       } finally {
-        this.WebLabel1.AfterLoadDFMValues();
       };
       pas["WEBLib.Forms"].TCustomForm.LoadDFMValues.call(this);
     };
     rtl.addIntf(this,pas.System.IUnknown);
-    var $r = this.$rtti;
-    $r.addField("WebLabel1",pas["WEBLib.StdCtrls"].$rtti["TLabel"]);
-    $r.addMethod("FLoginCreate",0,[["Sender",pas.System.$rtti["TObject"]]]);
   });
   this.FLogin = null;
 });
