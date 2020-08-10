@@ -1,0 +1,34 @@
+object FLogin: TFLogin
+  CSSLibrary = cssNone
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = 0
+  Font.Name = 'Arial'
+  Font.Size = 8
+  Font.Style = []
+  FormContainer = 'body'
+  FormStyle = fsNormal
+  Height = 480
+  Left = 0
+  OnCreate = FLoginCreate
+  TabOrder = 0
+  Top = 0
+  Width = 640
+  object WebLabel1: TWebLabel
+    Caption = 'WebLabel1'
+    ChildOrder = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = 0
+    Font.Name = 'Arial'
+    Font.Size = 8
+    Font.Style = []
+    Height = 12
+    Left = 65
+    ParentFont = False
+    TextDirection = tdDefault
+    Top = 42
+    Width = 54
+  end
+end
